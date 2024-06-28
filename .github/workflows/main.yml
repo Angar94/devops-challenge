@@ -19,8 +19,8 @@ jobs:
       with:
         node-version: '15.x'
 
-    - run: npm i prettier
     - run: npm ci
+    - run: npm install -g prettier
     - run: npm run lint
     - run: npm run prettier --write
     - run: npm test
