@@ -22,6 +22,6 @@ jobs:
     - run: npm i prettier
     - run: npm ci
     - run: npm run lint
-    - run: npm run prettier
+    - run: npm run prettier --write
     - run: npm test
     - run: npm run build
